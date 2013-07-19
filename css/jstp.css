@@ -1,3 +1,14 @@
+/* 
+
+How to calculate the block width
+
+Block Width [in ems] = 
+  (Full Width / Em Width * Block Amount) - 1.2 * Amount of Lines in Street
+
+Note: Full Width must be a multiple of 18
+
+*/
+
 body {
   font: normal normal normal 15px Roboto;
   -webkit-font-smoothing: antialiased;
