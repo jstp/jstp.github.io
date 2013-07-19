@@ -44,10 +44,15 @@ nav {
   width: 100%;
   position: fixed;
   top: 0;
+  z-index: 10;
+  background: white;
+  border-bottom: 1px solid black;
 }
 
 nav .inner {
+  position: relative;
   padding-top: .2em;
+  padding-bottom: 1.1em;
 }
 
 nav a {
@@ -70,7 +75,7 @@ header {
 header .inner {
   position: relative;
   padding-top: 8.4em;
-  padding-bottom: 4.2em;
+  padding-bottom: 6.6em;
 }
 
 header h1 {
@@ -135,6 +140,7 @@ header aside a {
 
 header aside a:hover span {
   visibility: visible;
+  margin-right: .6em;
 }
 
 header aside a i {
