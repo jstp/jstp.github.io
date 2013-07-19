@@ -1,0 +1,87 @@
+/* 
+
+How to calculate the block width
+
+Block Width [in ems] = 
+  (Full Width / (Em Width * Block Amount)) - 1.2 * Amount of Lines in Street
+
+Note: Full Width must be a multiple of 18
+
+*/
+
+body {
+  font: normal normal normal 15px Roboto;
+  -webkit-font-smoothing: antialiased;
+  margin: 0 auto;
+  line-height: 1.2em;
+  width: 1080px;
+}
+
+p {
+  margin: 0 1.2em 0 0;
+  float: left;
+  width: 34.8em;
+}
+
+h1 {
+  font-family: "Roboto Slab";
+  line-height: 1.2em;
+  font-size: 4em;
+  font-weight: 700;
+  margin: 1.4em 0 .45em 0;
+}
+
+h2 {
+  line-height: 1.2em;
+  font-size: 2em;
+  font-weight: 100;
+  margin: 1.3em 0 .5em 0;
+}
+
+blockquote {
+  margin: 0 0 0 1.2em;
+  font-style: italic;
+}
+
+section {
+  padding-top: 18px;
+  margin: 0;
+}
+
+.clearfix {
+  clear: both;
+}
+
+@media screen and (max-width: 1080px) {
+  body {
+    width: 900px;
+  }
+
+  p {
+    width: 28.8em;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    width: 720px;
+  }
+
+  p {
+    width: 22.8em;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  body {
+    width: 540px;
+  }
+
+  p {
+    width: 100%;
+    margin-right: 0;
+  }
+  p + p {
+    margin-top: 1.2em;
+  }
+}
