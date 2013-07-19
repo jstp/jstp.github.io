@@ -69,7 +69,7 @@ nav a span {
 header {
   width: 100%;
   text-align: center;
-  background: #EEEEEE;
+  background: #E0E0E0;
 }
 
 header .inner {
@@ -153,7 +153,69 @@ header aside span {
   visibility: hidden;
 }
 
-/* Helper classes */
+/* Keynote */
+
+#keynote h2 {
+  text-align: center;
+  margin: 0 0 .25em 0;
+  padding: .2em 0 0 0;
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: .2em;
+  font-size: 5em;
+  line-height: 1.2em;
+  line-height: auto;
+}
+
+#keynote .iframe {
+  margin-top: .2em;
+  font-size: 1em;
+}
+
+#keynote .iframe iframe {
+  padding: 0;
+  width: 100%;
+  height: 18em;
+}
+
+#keynote p {
+  margin-top: .3em;
+  padding: 0;
+}
+
+#keynote p mark{
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  background: transparent;
+  font-size: 1.2em;
+}
+
+#keynote p span{
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.2em;
+}
+
+/* Helper classes 
+
+How to calculate the block width
+
+Block Width [in ems] = 
+  (Full Width / (Em Width * Block Amount)) - 1.2 * Amount of Lines in Street
+
+Note: Full Width must be a multiple of 18
+
+*/
+
+.span2 {
+  display: block;
+  width: 33.6em;
+  margin: 0 2.4em 0 0;
+  float: left;
+}
+
 .span4 {
   display: block;
   width: 16.8em;
