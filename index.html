@@ -63,9 +63,19 @@
     </header>
 
     <section id="keynote">
-      <h2>Why a new protocol</h2>
-      <p>FILL IN</p>
-      <iframe src="herebethevideo"></iframe>
+      <div class="inner ">
+        <h2>Why a new protocol</h2>
+        <div class="iframe span2"> 
+          <iframe src="herebethevideo"></iframe>
+        </div>
+        <p class="span2">
+          <mark>We Love Our Protocol</mark>
+          <span>
+            JSTP es un protocolo que estamos haciendo desde hace unos meses que nos sirve para comunicar las diferentes partes de nuestro sistema. Lo que necesitabamos era tener un protocolo asin&shy;crónico que se aguante bastante carga, que sea rápido y escalable. Para eso utilizamos sockets y websockets. JSTP es un protocolo asincrónico: eso quiere decir que por cada paquete que le mandás al servidor, el servidor te puede man&shy;dar cualquier cantidad de paquetes. O sea también que el servidor puede res&shy;ponder con mensajes en cualquier momento. Los mensajes son JSON. JSTP es rápido porque las conexiones no se cierran. Es rápido también porque JSON es muy fácil de procesar y los paquetes son chiquitos. A lo largo del tiempo fuimos implementando JSTP en diferentes herramientas, como por ejemplo MongoDB y Twitter. Esto nos sirve para poder tener solo una instancia de una base de datos o de un feed corriendo en otro servidor y consultarla desde las diferentes aplicacio&shy;nes que estemos desarrollando. Tenemos la idea de que si vemos que alguna ins&shy;tancia está saturada la podamos duplicar y el sistema siga andando.
+          </span>
+        </p>
+        <div class="clearfix"></div>
+      </div>
     </section>
 
     <section id="future">
