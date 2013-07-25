@@ -1,0 +1,19 @@
+As we are from Argentina all of our implementations of JSTP are named in spanish, that represents something that the application does or the name of the technology: for example "pajaro", bird in spanish, our implementation of twitter, and "monje" that is a contraction of Mon-goDB and J-STP... monje means monk.
+
+The most complete implementation of JSTP is developed in Javascript, for Node.js as for the browser.
+
+One of the best cualities of JSTP is that the browser uses the exact same protocol as the rest of the sistem, If you want the server to communicate to a database you can do it with JSTP: If you want the browser to comunicate asyncronically with the server, you can do it with JSTP. Even if you want the browser can direclty call the database using JSTP (But it is not reccomendable becouse security issues)
+
+We use JSTP in everithung we do. We are contunoosly developing more and more implementations as the time goes by. Beyond the implementation for Node.js, JSTP is a specification, becouse we want to build it as an open standar. In fact the specification of JSTP can be found in a public repo in github. All stuff regarding JSTP es public in github,; you can see it, beter yet you can submit issues, beter yet you can fork it and send a pull request, beter yet you can create your own implementation of JSTP for the plattform or technology you want.
+
+With JSTP is really easy to update content in real time. Apps for Android or iOS, or for web, everithing can be sincronized in real time, and making it so is quite simple, that was our goal from the very beginning when we first have the idea of JSTP.
+
+Because JSTP is simetric its pottential to escalate is enormous. That means that each and every node of JSTP can be set to act as a client and a server at the same time. Almost every messaje of JSTP is identical; there are not questions and answers. That makes possible to distribute packets from a big web of servers, and to be able to do it asyncroniccaly, without haveing to wait for an anwser.
+
+The idea is that JSTP will be able to communicate with almost everything. Databases, APIs of soclian networks, Robots in Mars and even you bluetooth coffemaker. You get the idea, anything.
+
+The specification of JSTP (that at the moment is version 0.5) is quite complete. We manage to make it rise to our spectation, and after using it for a long time we have been poloshing every detail. Now we are starting a new milestone: we are going to make JSTP able to serve a sistem of servers that form an aplication, and give the application a way to scalate organically. To reach thatwe are currently working in this two asppects:
+
+1. Each engine of JSTP will be able to repost the state of saturation of the server in wich is running. For example, if a JSTP engine works as a database, it migth report to the aplications that are using the database that there is little space left in disk. And if the computer reaches a critical point, the idea is that another instance of the database is added to the sistem, and the applications can balance autmatticaly between both. The metrics that the engines will be able to report are free space in disk, memory available in ram, saturation of the cpu and networking consumption.
+
+2. An extention of security for JSTP that works with a publick key. We want to acheive that every JSTP engine could send secure messages that could only be decrypted by the true recipient, no matter how many engines has gone trough. Besides we are going to make possible to identify the aouthor of a message to avoid that it could be forged by other user in an open infrastructure.
