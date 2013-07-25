@@ -17,6 +17,7 @@ Para eso utilizamos sockets y websockets.
 
 JSTP es un protocolo asincrónico: eso quiere decir que por cada paquete que le mandás al servidor, el servidor te puede mandar cualquier cantidad de paquetes. O sea también que el servidor puede responder con mensajes en cualquier momento.
 
+
 Los mensajes son JSON.
 
 JSTP es rápido porque las conexiones no se cierran. Es rápido también porque JSON es muy fácil de procesar y los paquetes son chiquitos.
@@ -29,11 +30,14 @@ JSTP necesitaba una semántica, o sea, una forma de describir en los paquetes qu
 
 JSTP tiene algo curioso que es la posibilidad de bindearse a eventos tanto en el propio sistema como en un servidor remoto. Lo que te permite esto es enviar un paquete una sola vez, generalmente cuando querés iniciar el servicio, y recibir a través del tiempo información relevante, como por ejemplo el stream de tweets en vivo de un hashtag de Twitter.
 
+----------
+
 Ya que somos de Argentina a todas nuestras implementaciones de JSTP les ponemos nombres en español que tengan que ver con el nombre de la aplicación o con lo que representa: por ejemplo, el pajarito de Twitter es "pájaro" y "monje" es una contracción de Mon-goDB y J-STP. 
 
 La implementación más completa que hicimos de JSTP está desarrollada en JavaScript tanto para Node.js como para el browser.
 
 Una de las mejores cosas de JSTP es que el browser usa exactamente el mismo protocolo que todo el resto del sistema. Si necesitás que el servidor se conecte con una base de datos, puede hacerlo en JSTP: si necesitás que el browser se comunique asincrónicamente con el servidor, puede hacerlo en JSTP. Incluso el browser se puede comunicar directamente con la base de datos usando JSTP (aunque no es muy recomendable por temas de seguridad).
+
 
 Nosotros usamos JSTP en todo lo que hacemos. Vamos desarrollando más o más herramientas a medida que pasa el tiempo. Más allá de la implementación para Node.js, JSTP es una especificación, porque queremos construirlo como un estándar abierto. De hecho, la especificación de JSTP la podés encontrar en github en un repositorio público. Todo lo relativo a JSTP está público en github; podés hacer verlos, mejor aún podés crear issues, mejor aún podés forkearlos y mandarlos un pull request con mejor, y mejor aún podés crear tu propia implementación de JSTP para la plataforma que quieras.
 
